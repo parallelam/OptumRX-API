@@ -25,7 +25,7 @@ class Express {
     let stringifyPort: string;
     port ? (stringifyPort = `${port}`) : (stringifyPort = '');
     const hostname: string = Locals.config().appUri;
-    this.express.listen(port, () => {
+    this.express.listen(process.env.PORT || port, () => {
       return console.log('\x1b[33m%s\x1b[0m', `Server @ '${hostname}' :: Listening @ '${stringifyPort}'`);
     });
   }
