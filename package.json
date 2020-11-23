@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "postinstall": "tsc",
     "compile": "tsc",
     "start": "npm run compile && npm run serve",
     "serve": "node dist/index.js",
