@@ -4,8 +4,8 @@
   "description": "REST API",
   "main": "dist",
   "engines": {
-    "node": "15.x",
-    "npm": "6.x"
+    "node": "15.2.1",
+    "npm": "6.10.1"
   },
   "scripts": {
     "build": "tsc",
@@ -16,7 +16,8 @@
     "lint": "eslint . --ext .ts --quiet",
     "fix": "eslint --fix .",
     "local-test": "npm run lint && cross-env NODE_ENV=local mocha -u tdd --reporter spec --exit",
-    "dev-test": "npm run lint && cross-env NODE_ENV=dev mocha -u tdd --reporter spec --exit"
+    "dev-test": "npm run lint && cross-env NODE_ENV=dev mocha -u tdd --reporter spec --exit",
+    "deploy": "git add . && git commit -m updating && git push"
   },
   "dependencies": {
     "class-validator": "^0.9.1",
