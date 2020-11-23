@@ -17,7 +17,7 @@
     "fix": "eslint --fix .",
     "local-test": "npm run lint && cross-env NODE_ENV=local mocha -u tdd --reporter spec --exit",
     "dev-test": "npm run lint && cross-env NODE_ENV=dev mocha -u tdd --reporter spec --exit",
-    "deploy": "git add . && git commit -m updating && git push"
+    "deploy": "git add . && git commit -m Heroku && git push"
   },
   "dependencies": {
     "class-validator": "^0.9.1",
