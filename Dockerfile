@@ -2,15 +2,16 @@
 FROM node:15.2.1
 
 # Working Directory
-WORKDIR /dist
+WORKDIR /src/dist
 
 # Environment Injects
-ENV PATH /app/node_modules/.bin:$PATH
-ENV NODE_ENV dev
-ENV API_PREFIX v1
+ENV NODE_ENV=dev
+ENV API_PREFIX=v1
 
 # Install Dependencies
-COPY package.json .
+COPY package*.json ./
+COPY tsconfig*.json ./
+COPY ./src ./src
 RUN npm install --silent
 
 # Duplicate All Source Code to Working Directory
