@@ -2,7 +2,7 @@
 
 A RESTful microservice written in TypeScript to pair with the OptumRX UI challenge.
 
-## Do Not Use Real Information
+## Do Not Use Real Information - No Encryption Utilized
 
 ## Running the App with Docker Composer for Windows
 
@@ -33,6 +33,22 @@ docker-compose up --build
 "password": "foobar"
 ```
 
-- Application has 70% chance of delivering a Success Response (HTTP Status Codes: >= 200)
-- Application has 30% of delivering an Error Response
-- If Error Response, application has a 50/50 chance of delivering a User Error Response (HTTP Status Codes: >= 400) or a Server Error Response (HTTP Status Codes: >= 500)
+- On GET, Application health check URI returns status code of 200.
+
+- On POST, Application has 70% chance of delivering a Success Response (HTTP Status Codes: >= 200)
+- On POST, Application has 30% of delivering an Error Response
+- On POST, If Error Response, application has a 50/50 chance of delivering a User Error Response (HTTP Status Codes: >= 400) or a Server Error Response (HTTP Status Codes: >= 500)
+
+* Link For Heroku Hosted Application for REST Client Interactions:
+
+```
+POST: https://optumrx-challenge-backend-node.herokuapp.com/v1/signup
+Healthcheck GET: https://optumrx-challenge-backend-node.herokuapp.com/v1/health
+```
+
+- URI Default When Ran Locally:
+
+```
+POST: localhost:8080/{version prefix specified in ENV injection}/signup
+Healthcheck GET: localhost:8080/{version prefix specified in ENV injection}/health
+```
