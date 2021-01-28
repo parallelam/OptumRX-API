@@ -18,13 +18,15 @@
 
 - <details><summary>Click to Show Docker Command</summary>
 
-  ```Docker
-  # Run Following Command in Terminal from Directory Containing Docker File:
+  - Command:
 
-  docker-compose up --build
-  ```
+    ```Docker
+    # Run Following Command in Terminal from Directory Containing Docker File:
 
-    </details>
+    docker-compose up --build
+    ```
+
+  </details>
 
 ## Running the App Locally After Cloning Repository
 
