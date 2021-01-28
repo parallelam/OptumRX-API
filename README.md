@@ -2,17 +2,24 @@
 
 - A RESTful microservice written in TypeScript to pair with the OptumRX UI challenge.
 
-## Do Not Use Real Information - No Encryption Utilized
+  <details><summary>Click to Show OptumRX UI Information</summary>
 
-- <details><summary>Click to Show Do Not Use Real Information
-    </summary>
-    
-    ```bash
-    # do not use real information
-    # there is no encryption
-    ```
+  - [GitHub Repository](https://github.com/parallelam/optumrx-challenge)
+
+  - [Heroku Hosted UI](https://optumrx-challenge-ui-react.herokuapp.com/)
 
     </details>
+
+## Do Not Use Real Information - No Encryption Utilized
+
+- <details><summary>Click to Show Do Not Use Real Info</summary>
+
+  ```bash
+  # do not use real information
+  # there is no encryption
+  ```
+
+  </details>
 
 ## Running the App with Docker Composer for Windows
 
