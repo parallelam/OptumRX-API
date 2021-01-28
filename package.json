@@ -13,6 +13,7 @@
     "compile": "tsc",
     "start": "npm run compile && npm run serve",
     "serve": "node dist/index.js",
+    "refresh": "rm -r ./dist && rm -r node_modules && npm install && npm run start",
     "dev": "tsc --watch & NODE_ENV=development nodemon dist",
     "lint": "eslint . --ext .ts --quiet",
     "fix": "eslint --fix .",
